@@ -36,11 +36,13 @@ public class Main {
                     "       /__________________________________\\\n" +
                     "       '----------------------------------'");
 
-            System.out.println("------------------------------------------");
-            System.out.println("|   Welcome to the BMI Calculator        |");
-            System.out.println("|   To begin please make choice below    |");
-            System.out.println("|                ^_^                     |");
-            System.out.println("------------------------------------------");
+
+            //System.out.println("       '----------------------------------'");)
+            System.out.println("       -----------------------------------");
+            System.out.println("       |  Welcome to the BMI Calculator!  |");
+            System.out.println("       |To begin please make choice below |");
+            System.out.println("       |               ^_^                |");
+            System.out.println("       -----------------------------------");
 
             System.out.println("Are you Male or Female? (1) Male || (2) Female: ");
             int gender = input.nextInt();
