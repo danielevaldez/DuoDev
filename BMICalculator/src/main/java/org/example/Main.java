@@ -18,17 +18,34 @@ public class Main {
         int userChoice = 0;
 
         do{
+            System.out.println("                                     .-===-.\n" +
+                    "                                      \\   /\n" +
+                    "                                      |   |\n" +
+                    "                                    __|:::|__\n" +
+                    "       .-===-.                 _.--'  |:::|  `-._\n" +
+                    "        \\   /           __    /      (:::::)     \\\n" +
+                    "        |:::|          |  |   \\       `---'      /\n" +
+                    "      __|:::|__        |..|    ``--...____...--''\n" +
+                    " _.--'  |:::|  `-._   /_/\\_\\     ___..-(O/\n" +
+                    "/      (:::::)     \\  |  __...--' __..-''\n" +
+                    "\\       `---'      /_.--(o)_...--'\n" +
+                    " ``--...____...--''__..--'_|\n" +
+                    "        \\O)___..--'   \\ \\/ /\n" +
+                    "         .-------------|''|-------------.\n" +
+                    "        /              |__|              \\\n" +
+                    "       /__________________________________\\\n" +
+                    "       '----------------------------------'");
 
             System.out.println("------------------------------------------");
-            System.out.println("|   welcome to the BMI calculator        |");
-            System.out.println("|   TO begin please make choice below    |");
+            System.out.println("|   Welcome to the BMI Calculator        |");
+            System.out.println("|   To begin please make choice below    |");
             System.out.println("|                ^_^                     |");
             System.out.println("------------------------------------------");
 
-            System.out.println("Are you Male or Female? (1)Male || (2)Female: ");
+            System.out.println("Are you Male or Female? (1) Male || (2) Female: ");
             int gender = input.nextInt();
 
-            System.out.println("What unit of measurement would you like? (1)lbs || (2)kilos ");
+            System.out.println("What unit of measurement would you like? (1) lbs || (2) kilos ");
             int typeOfWeight = input.nextInt();
             switch (typeOfWeight){
                 case 1:
@@ -43,13 +60,13 @@ public class Main {
                     break;
             }
 
-            System.out.println("What format would you like to input height in? (1)feet/inches || (2)inches|| (3)meters");
+            System.out.println("What format would you like to input height in? (1) Feet/Inches || (2) Inches|| (3) Meters");
             int typeOfHeight = input.nextInt();
             switch (typeOfHeight){
                 case 1:
-                    System.out.println("Enter height in feet -- (inches entered next)");
+                    System.out.println("Enter height in Feet -- (Inches entered next)");
                     int heightFeet = input.nextInt();
-                    System.out.println("Enter inches");
+                    System.out.println("Enter Inches");
                     int inches = input.nextInt();
                     totalHeight = (heightFeet * 12) + inches;
                     break;
@@ -114,7 +131,8 @@ public class Main {
             userChoice = input.nextInt();
 
         }while(userChoice != 2);
-
+//Instead of Male vs Female, we can change this to ask user for age, and in the space we have for female replace with children
+        //Apparently Children and Teens have different BMI ranges than Adults
 
 
 
