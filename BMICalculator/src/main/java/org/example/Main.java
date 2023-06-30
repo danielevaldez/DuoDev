@@ -60,6 +60,11 @@ public class Main {
                     double weightKilos = input.nextDouble();
                     totalWeight = weightKilos * 2.2;
                     break;
+
+                default:
+                    System.out.println("Oops seems something went wrong :(");
+                    continue;
+
             }
 
             System.out.println("What format would you like to input height in? (1) Feet/Inches || (2) Inches|| (3) Meters");
@@ -83,6 +88,10 @@ public class Main {
                     double heightMeter = input.nextDouble();
                     totalHeight = heightMeter * 0.0254;
                     break;
+
+                default:
+                    System.out.println("Oops seems something went wrong :(");
+                    continue;
             }
             if(gender == 1) {
                 BMI = totalWeight / Math.pow(totalHeight, 2) * 703;
