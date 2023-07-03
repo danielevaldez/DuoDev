@@ -67,7 +67,7 @@ public class Main {
 
             }
 
-            System.out.println("What format would you like to input height in? (1) Feet/Inches || (2) Inches|| (3) Meters");
+            System.out.println("What format would you like to input height in? (1) Feet/Inches || (2) Inches || (3) Meters");
             int typeOfHeight = input.nextInt();
             switch (typeOfHeight){
                 case 1:
